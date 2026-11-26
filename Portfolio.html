@@ -195,13 +195,13 @@
                 <!-- Right Column: Interactive Engine Telemetry / Developer Card -->
                 <div class="lg:col-span-5">
                     <div class="glass-card rounded-2xl p-6 shadow-2xl relative overflow-hidden animate-float">
-                        <!-- Developer Portrait Image Placeholder -->
+                        <!-- Developer Portrait Image -->
                         <div class="flex flex-col sm:flex-row sm:items-center gap-4 pb-5 mb-5 border-b border-slate-800">
                             <div class="relative w-28 h-28 sm:w-32 sm:h-32 rounded-2xl overflow-hidden bg-slate-950 border border-cyan-500/30 shrink-0 shadow-lg shadow-cyan-500/10">
                                 <img
-                                    src="images/saikat-mandal-avatar.jpg"
+                                    src="https://saikatmadhab.github.io/Portfolio/Profile.jpg"
                                     alt="Saikat Mandal — Lead & Senior Unity Game Developer"
-                                    onerror="this.onerror=null; this.src='https://saikatmadhab.github.io/Portfolio/Profile.jpg';"
+                                    onerror="this.onerror=null; this.src='https://placehold.co/512x512/0f172a/22d3ee?text=SM';"
                                     class="w-full h-full object-cover"
                                 >
                             </div>
@@ -674,7 +674,7 @@
                     </button>
                 </div>
 
-                <!-- Thumbnail Strip (All 5 or 6 Screenshots from Doc) -->
+                <!-- Thumbnail Strip (All 5 or 6 Screenshots) -->
                 <div id="modal-thumbnails" class="grid grid-cols-5 sm:grid-cols-6 gap-2.5 mt-3">
                     <!-- Thumbnails injected dynamically -->
                 </div>
@@ -719,16 +719,7 @@
 
     <!-- JavaScript Application Logic -->
     <script>
-        // =========================================================================
-        // HOW TO LINK YOUR ORIGINAL SCREENSHOTS LATER:
-        // Option A (Local Folder): Create an "images/" folder next to index.html
-        //          and save your screenshots using the exact filenames listed below
-        //          (e.g., images/lacuna-1.jpg, images/wheel-run-1.jpg, etc.).
-        // Option B (Hosted URLs): Replace any `src` value in `featuredProjects`
-        //          with your direct Imgur / GitHub / Cloudinary image URL.
-        // Note: Until a real file is present at `src`, the `onerror` handler
-        //       automatically displays a clean labeled placeholder image!
-        // =========================================================================
+        const BASE_IMAGE_URL = 'https://saikatmadhab.github.io/Portfolio/';
 
         function makePlaceholderUrl(label, bgHex = '0f172a', textHex = '38bdf8') {
             return `https://placehold.co/1280x720/${bgHex}/${textHex}?text=${encodeURIComponent(label)}`;
@@ -749,11 +740,11 @@
                 tech: ['Unity', 'C#', 'Procedural Tracks', 'Mobile Input'],
                 summary: 'An engaging 3D mobile endless-runner game where players steer a rolling dual-wheel axle across elevated railway tracks, dodging oncoming trains while collecting coins across vibrant scenic landscapes.',
                 screenshots: [
-                    { src: 'https://saikatmadhab.github.io/Portfolio/WheelRun3D/1.png', caption: 'Screenshot 1: Railway Tracks, City Skyline & Coin Trail' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/WheelRun3D/2.png', caption: 'Screenshot 2: Elevated River Bridge & Multi-Track Switching' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/WheelRun3D/3.png', caption: 'Screenshot 3: Mobile Touch Controls, Coin & KM Distance HUD' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/WheelRun3D/4.png', caption: 'Screenshot 4: High-Speed Train Dodging at 4.728 KM' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/WheelRun3D/5.png', caption: 'Screenshot 5: Game Over Screen (Current vs. Highest KM)' }
+                    { src: `${BASE_IMAGE_URL}WheelRun3D/1.png`, caption: 'Screenshot 1: Railway Tracks, City Skyline & Coin Trail' },
+                    { src: `${BASE_IMAGE_URL}WheelRun3D/2.png`, caption: 'Screenshot 2: Elevated River Bridge & Multi-Track Switching' },
+                    { src: `${BASE_IMAGE_URL}WheelRun3D/3.png`, caption: 'Screenshot 3: Mobile Touch Controls, Coin & KM Distance HUD' },
+                    { src: `${BASE_IMAGE_URL}WheelRun3D/4.png`, caption: 'Screenshot 4: High-Speed Train Dodging at 4.728 KM' },
+                    { src: `${BASE_IMAGE_URL}WheelRun3D/5.png`, caption: 'Screenshot 5: Game Over Screen (Current vs. Highest KM)' }
                 ],
                 contributions: [
                     'Designed and developed the complete game concept, physics-driven rolling mechanics, and track-switching controls.',
@@ -776,12 +767,12 @@
                 tech: ['Unity', 'C#', 'FPS Mechanics', 'Enemy AI'],
                 summary: 'A 3D first-person shooter game set in a detailed mountain village combat arena with wooden structures, watchtowers, weapon pickups, recoil/firing mechanics, and enemy AI engagements.',
                 screenshots: [
-                    { src: 'https://saikatmadhab.github.io/Portfolio/FPS_Shooter/1.png', caption: 'Screenshot 1: Wooden Cabin Interior & Rifle HUD (30/30)' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/FPS_Shooter/2.png', caption: 'Screenshot 2: Outdoor Mountain Village Combat Engagement' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/FPS_Shooter/3.png', caption: 'Screenshot 3: Interactive Weapon Pickup Prompt ("Press E")' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/FPS_Shooter/4.png', caption: 'Screenshot 4: Barracks Interior Environment & Props' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/FPS_Shooter/5.png', caption: 'Screenshot 5: Active Firing, Muzzle Flash & Shell Ejection' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/FPS_Shooter/6.png', caption: 'Screenshot 6: Village Watchtower & Level Architecture' }
+                    { src: `${BASE_IMAGE_URL}FPS_Shooter/1.png`, caption: 'Screenshot 1: Wooden Cabin Interior & Rifle HUD (30/30)' },
+                    { src: `${BASE_IMAGE_URL}FPS_Shooter/2.png`, caption: 'Screenshot 2: Outdoor Mountain Village Combat Engagement' },
+                    { src: `${BASE_IMAGE_URL}FPS_Shooter/3.png`, caption: 'Screenshot 3: Interactive Weapon Pickup Prompt ("Press E")' },
+                    { src: `${BASE_IMAGE_URL}FPS_Shooter/4.png`, caption: 'Screenshot 4: Barracks Interior Environment & Props' },
+                    { src: `${BASE_IMAGE_URL}FPS_Shooter/5.png`, caption: 'Screenshot 5: Active Firing, Muzzle Flash & Shell Ejection' },
+                    { src: `${BASE_IMAGE_URL}FPS_Shooter/6.png`, caption: 'Screenshot 6: Village Watchtower & Level Architecture' }
                 ],
                 contributions: [
                     'Implemented responsive first-person movement, sprinting, aiming down sights, and camera look controls.',
@@ -805,12 +796,12 @@
                 tech: ['Unity', 'C#', '3D UI/UX', 'Modular Architecture'],
                 summary: 'A modular, interactive 3D weapon armory and loadout system for first-person shooters featuring real-time 3D model inspection, multi-category browsing, stat comparisons, and stat upgrades.',
                 screenshots: [
-                    { src: 'https://saikatmadhab.github.io/Portfolio/WeaponStore/1.png', caption: 'Screenshot 1: Rifle Category — Chairgun 3D Preview & Stats' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/WeaponStore/2.png', caption: 'Screenshot 2: Rifle Category — Assault Rifle Blueprint & Stats' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/WeaponStore/3.png', caption: 'Screenshot 3: Grenade Category — StickyGrenade 3D Model' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/WeaponStore/4.png', caption: 'Screenshot 4: Plasma & Ordnance Category — SouthBomb' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/WeaponStore/5.png', caption: 'Screenshot 5: Bullets & Ammunition Category — FBW8' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/WeaponStore/6.png', caption: 'Screenshot 6: Shotgun Category — Combat Shotgun Loadout' }
+                    { src: `${BASE_IMAGE_URL}WeaponStore/1.png`, caption: 'Screenshot 1: Rifle Category — Chairgun 3D Preview & Stats' },
+                    { src: `${BASE_IMAGE_URL}WeaponStore/2.png`, caption: 'Screenshot 2: Rifle Category — Assault Rifle Blueprint & Stats' },
+                    { src: `${BASE_IMAGE_URL}WeaponStore/3.png`, caption: 'Screenshot 3: Grenade Category — StickyGrenade 3D Model' },
+                    { src: `${BASE_IMAGE_URL}WeaponStore/4.png`, caption: 'Screenshot 4: Plasma & Ordnance Category — SouthBomb' },
+                    { src: `${BASE_IMAGE_URL}WeaponStore/5.png`, caption: 'Screenshot 5: Bullets & Ammunition Category — FBW8' },
+                    { src: `${BASE_IMAGE_URL}WeaponStore/6.png`, caption: 'Screenshot 6: Shotgun Category — Combat Shotgun Loadout' }
                 ],
                 contributions: [
                     'Developed a sleek interactive weapon store and loadout customization UI.',
@@ -835,12 +826,12 @@
                 tech: ['Unity', 'C#', 'PlayFab', 'Azure'],
                 summary: 'Led Unity gameplay development for a realistic 3D equestrian sports simulation featuring competitive dressage, cross-country, and 5* show-jumping events alongside horse care and career progression.',
                 screenshots: [
-                    { src: 'https://saikatmadhab.github.io/Portfolio/Equestriad/1.png', caption: 'Screenshot 1: Free Ride Paddock Update' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/Equestriad/2.png', caption: 'Screenshot 2: 5* World Show-Jumping Stadium Event' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/Equestriad/3.png', caption: 'Screenshot 3: Stable Grooming, Care & Horse Training' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/Equestriad/4.png', caption: 'Screenshot 4: Cross-Country Obstacle Course Racing' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/Equestriad/5.png', caption: 'Screenshot 5: Competitive Dressage Arena' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/Equestriad/6.png', caption: 'Screenshot 6: Horse & Rider Tack Customization' }
+                    { src: `${BASE_IMAGE_URL}Equestriad/1.png`, caption: 'Screenshot 1: Free Ride Paddock Update' },
+                    { src: `${BASE_IMAGE_URL}Equestriad/2.png`, caption: 'Screenshot 2: 5* World Show-Jumping Stadium Event' },
+                    { src: `${BASE_IMAGE_URL}Equestriad/3.png`, caption: 'Screenshot 3: Stable Grooming, Care & Horse Training' },
+                    { src: `${BASE_IMAGE_URL}Equestriad/4.png`, caption: 'Screenshot 4: Cross-Country Obstacle Course Racing' },
+                    { src: `${BASE_IMAGE_URL}Equestriad/5.png`, caption: 'Screenshot 5: Competitive Dressage Arena' },
+                    { src: `${BASE_IMAGE_URL}Equestriad/6.png`, caption: 'Screenshot 6: Horse & Rider Tack Customization' }
                 ],
                 contributions: [
                     'Developed and maintained core gameplay systems for a commercial equestrian sports simulation.',
@@ -864,12 +855,12 @@
                 tech: ['Unity', 'C#', 'Oculus VR SDK', '3D Spatial UI'],
                 summary: 'An immersive standalone virtual reality medical and educational simulation for Oculus Quest enabling spatial exploration of multi-layered 3D human anatomy systems and contextual learning.',
                 screenshots: [
-                    { src: 'https://saikatmadhab.github.io/Portfolio/HumanAnatomy/1.png', caption: 'Screenshot 1: Human Anatomy VR Title Splash Screen' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/HumanAnatomy/2.png', caption: 'Screenshot 2: VR Controller Gender Model Selection' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/HumanAnatomy/3.png', caption: 'Screenshot 3: Body Region Selector (Head, Torso, Limbs)' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/HumanAnatomy/4.png', caption: 'Screenshot 4: Lower Limb Part Inspection & Info Panel' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/HumanAnatomy/5.png', caption: 'Screenshot 5: Anatomical Layers (Skin, Muscular, Skeletal)' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/HumanAnatomy/6.png', caption: 'Screenshot 6: Femur & Skeletal System Audio/Text Guide' }
+                    { src: `${BASE_IMAGE_URL}HumanAnatomy/1.png`, caption: 'Screenshot 1: Human Anatomy VR Title Splash Screen' },
+                    { src: `${BASE_IMAGE_URL}HumanAnatomy/2.png`, caption: 'Screenshot 2: VR Controller Gender Model Selection' },
+                    { src: `${BASE_IMAGE_URL}HumanAnatomy/3.png`, caption: 'Screenshot 3: Body Region Selector (Head, Torso, Limbs)' },
+                    { src: `${BASE_IMAGE_URL}HumanAnatomy/4.png`, caption: 'Screenshot 4: Lower Limb Part Inspection & Info Panel' },
+                    { src: `${BASE_IMAGE_URL}HumanAnatomy/5.png`, caption: 'Screenshot 5: Anatomical Layers (Skin, Muscular, Skeletal)' },
+                    { src: `${BASE_IMAGE_URL}HumanAnatomy/6.png`, caption: 'Screenshot 6: Femur & Skeletal System Audio/Text Guide' }
                 ],
                 contributions: [
                     'Architected an immersive standalone VR experience optimized for Oculus Quest mobile VR hardware.',
@@ -893,12 +884,12 @@
                 tech: ['Unity', 'C#', 'Rewired', 'Console SDKs'],
                 summary: 'Ported and adapted the critically acclaimed story-driven 2D sci-fi detective adventure to Nintendo Switch, Xbox, and PlayStation 5, delivering seamless gamepad controls and certified console performance.',
                 screenshots: [
-                    { src: 'https://saikatmadhab.github.io/Portfolio/Lacuna/1.png', caption: 'Screenshot 1: Lacuna Key Art & Console Cover' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/Lacuna/2.png', caption: 'Screenshot 2: Stargazer Bistro Dialogue System' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/Lacuna/3.png', caption: 'Screenshot 3: Noir Bar Investigation & HUD' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/Lacuna/4.png', caption: 'Screenshot 4: In-Game E-Mails & Clues Terminal UI' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/Lacuna/5.png', caption: 'Screenshot 5: Ghara City Balcony Rooftop Scene' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/Lacuna/6.png', caption: 'Screenshot 6: Case Sheet & Objectives Progression' }
+                    { src: `${BASE_IMAGE_URL}Lacuna/1.png`, caption: 'Screenshot 1: Lacuna Key Art & Console Cover' },
+                    { src: `${BASE_IMAGE_URL}Lacuna/2.png`, caption: 'Screenshot 2: Stargazer Bistro Dialogue System' },
+                    { src: `${BASE_IMAGE_URL}Lacuna/3.png`, caption: 'Screenshot 3: Noir Bar Investigation & HUD' },
+                    { src: `${BASE_IMAGE_URL}Lacuna/4.png`, caption: 'Screenshot 4: In-Game E-Mails & Clues Terminal UI' },
+                    { src: `${BASE_IMAGE_URL}Lacuna/5.png`, caption: 'Screenshot 5: Ghara City Balcony Rooftop Scene' },
+                    { src: `${BASE_IMAGE_URL}Lacuna/6.png`, caption: 'Screenshot 6: Case Sheet & Objectives Progression' }
                 ],
                 contributions: [
                     'Ported and adapted the full game architecture for Nintendo Switch, Xbox, and PlayStation 5.',
@@ -924,12 +915,12 @@
                 tech: ['Unity', 'C#', 'Rewired', 'Memory Optimization'],
                 summary: 'Adapted the intricate PC restaurant management and business simulation tycoon for console platforms, transforming complex mouse-driven management UI into intuitive gamepad navigation.',
                 screenshots: [
-                    { src: 'https://saikatmadhab.github.io/Portfolio/PizzaConnection3/1.png', caption: 'Screenshot 1: Pizza Connection 3 Key Art Banner' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/PizzaConnection3/2.png', caption: 'Screenshot 2: Bakehouse Custom Pizza Creator UI' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/PizzaConnection3/3.png', caption: 'Screenshot 3: Isometric City District Overview' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/PizzaConnection3/4.png', caption: 'Screenshot 4: Restaurant Interior & Kitchen Management' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/PizzaConnection3/5.png', caption: 'Screenshot 5: Rome Colosseum Landmark & Traffic' },
-                    { src: 'https://saikatmadhab.github.io/Portfolio/PizzaConnection3/6.png', caption: 'Screenshot 6: London District Expansion Map' }
+                    { src: `${BASE_IMAGE_URL}PizzaConnection3/1.png`, caption: 'Screenshot 1: Pizza Connection 3 Key Art Banner' },
+                    { src: `${BASE_IMAGE_URL}PizzaConnection3/2.png`, caption: 'Screenshot 2: Bakehouse Custom Pizza Creator UI' },
+                    { src: `${BASE_IMAGE_URL}PizzaConnection3/3.png`, caption: 'Screenshot 3: Isometric City District Overview' },
+                    { src: `${BASE_IMAGE_URL}PizzaConnection3/4.png`, caption: 'Screenshot 4: Restaurant Interior & Kitchen Management' },
+                    { src: `${BASE_IMAGE_URL}PizzaConnection3/5.png`, caption: 'Screenshot 5: Rome Colosseum Landmark & Traffic' },
+                    { src: `${BASE_IMAGE_URL}PizzaConnection3/6.png`, caption: 'Screenshot 6: London District Expansion Map' }
                 ],
                 contributions: [
                     'Ported and adapted core tycoon simulation systems for Nintendo Switch, Xbox, and PlayStation.',
@@ -1000,7 +991,7 @@
 
                 const primaryShot = project.screenshots[0];
                 const fallbackUrl = makePlaceholderUrl(
-                    `${project.title} — Cover (${primaryShot.src})`,
+                    `${project.title} — Cover`,
                     project.placeholderColor.bg,
                     project.placeholderColor.text
                 );
@@ -1015,7 +1006,7 @@
 
                 card.innerHTML = `
                     <div>
-                        <!-- Image Placeholder Header -->
+                        <!-- Image Header -->
                         <div class="relative aspect-video w-full overflow-hidden bg-slate-950 border-b border-slate-800">
                             <img 
                                 src="${primaryShot.src}" 
@@ -1091,8 +1082,6 @@
         const modal = document.getElementById('project-modal');
         const closeModalBtn = document.getElementById('close-modal-btn');
         const modalMainImg = document.getElementById('modal-main-img');
-        const modalImgCaption = document.getElementById('modal-img-caption');
-        const modalImgPath = document.getElementById('modal-img-path');
         const modalThumbnails = document.getElementById('modal-thumbnails');
         let activeModalProject = null;
         let activeSlideIndex = 0;
@@ -1104,7 +1093,7 @@
 
             const shot = activeModalProject.screenshots[activeSlideIndex];
             const fallbackUrl = makePlaceholderUrl(
-                `${activeModalProject.title} — ${shot.caption} (${shot.src})`,
+                `${activeModalProject.title} — ${shot.caption}`,
                 activeModalProject.placeholderColor.bg,
                 activeModalProject.placeholderColor.text
             );
@@ -1115,9 +1104,6 @@
             };
             modalMainImg.src = shot.src;
             modalMainImg.alt = shot.caption;
-
-            modalImgCaption.textContent = `[${activeSlideIndex + 1}/${total}] ${shot.caption}`;
-            modalImgPath.textContent = shot.src;
 
             // Highlight active thumbnail
             const thumbs = modalThumbnails.querySelectorAll('button');
