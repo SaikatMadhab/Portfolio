@@ -224,7 +224,6 @@
 
                         <div class="space-y-4 font-mono text-xs sm:text-sm">
                             <div class="bg-slate-950/80 p-3.5 rounded-xl border border-slate-800/80">
-                                <div class="text-slate-500 mb-1">// Target Build Platforms</div>
                                 <div class="flex flex-wrap gap-1.5 mt-2">
                                     <span class="px-2.5 py-1 rounded-md bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 text-xs"><i class="fa-brands fa-android mr-1"></i>Android / Mobile</span>
                                     <span class="px-2.5 py-1 rounded-md bg-purple-500/15 text-purple-300 border border-purple-500/30 text-xs"><i class="fa-solid fa-vr-cardboard mr-1"></i>VR / Oculus</span>
@@ -236,7 +235,6 @@
                             </div>
 
                             <div class="bg-slate-950/80 p-3.5 rounded-xl border border-slate-800/80 space-y-2">
-                                <div class="text-slate-500">// Core Engineering Pillars</div>
                                 <div class="flex justify-between items-center text-slate-300">
                                     <span>Unity, C#, PixiJS & ES5</span>
                                     <span class="text-emerald-400 font-bold">EXPERT</span>
@@ -274,7 +272,6 @@
             <!-- Section Header & Filter Controls -->
             <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
                 <div>
-                    <div class="text-cyan-400 font-mono text-xs uppercase tracking-widest mb-2">// Spotlight Showcase</div>
                     <h2 class="text-3xl sm:text-4xl font-display font-bold text-white">Featured Game & VR Projects</h2>
                     <p class="text-slate-400 mt-2 max-w-2xl text-sm sm:text-base">
                         Commercial console ports, mobile live-ops simulations, standalone VR training, and interactive 3D gameplay prototypes. Click any card to inspect contributions and media links.
@@ -312,7 +309,6 @@
     <section id="experience" class="py-20 bg-slate-950/90 border-t border-slate-800/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="mb-12">
-                <div class="text-emerald-400 font-mono text-xs uppercase tracking-widest mb-2">// Career Timeline & Academic Credentials</div>
                 <h2 class="text-3xl sm:text-4xl font-display font-bold text-white">Work History & Education</h2>
                 <p class="text-slate-400 mt-2 max-w-2xl text-sm sm:text-base">
                     Over a decade of progressive software engineering roles across slot prototyping, lead Unity architecture, console porting, multiplayer networking, and desktop application development.
@@ -472,7 +468,6 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
                 <div>
-                    <div class="text-emerald-400 font-mono text-xs uppercase tracking-widest mb-2">// Complete Archive</div>
                     <h2 class="text-3xl sm:text-4xl font-display font-bold text-white">Shipped & Other Titles (30)</h2>
                     <p class="text-slate-400 mt-2 max-w-2xl text-sm sm:text-base">
                         A comprehensive catalog spanning multiplayer battle royales, arcade mobile hits, board & casino games, VR construction demos, and Windows desktop utilities.
@@ -523,7 +518,6 @@
     <section id="skills" class="py-20 bg-slate-900/50 border-t border-slate-800/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-14">
-                <div class="text-amber-400 font-mono text-xs uppercase tracking-widest mb-2">// Technical Arsenal</div>
                 <h2 class="text-3xl sm:text-4xl font-display font-bold text-white">Core Skills & Tech Stack</h2>
                 <p class="text-slate-400 mt-2 text-sm sm:text-base">
                     Production-tested tools, engines, SDKs, and architectural practices honed across 35+ shipped titles and multi-platform console releases.
@@ -634,7 +628,7 @@
                         <i class="fa-brands fa-unity text-cyan-400"></i>
                         <span>Unity Play Profile</span>
                     </a>
-                    <a href="https://play.google.com/store/apps/details?id=com.equusports.equestriad" target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 hover:border-emerald-500/50 text-sm font-medium text-slate-200 flex items-center gap-2 transition-all">
+                    <a href="https://play.google.com/store/apps/details?id=com.mplusigames.wheelrun3d" target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 hover:border-emerald-500/50 text-sm font-medium text-slate-200 flex items-center gap-2 transition-all">
                         <i class="fa-brands fa-google-play text-emerald-400"></i>
                         <span>Shipped Mobile Store</span>
                     </a>
@@ -659,11 +653,26 @@
                 <i class="fa-solid fa-xmark text-lg"></i>
             </button>
 
-            <!-- Interactive Screenshot Gallery Viewer -->
+            <!-- Interactive Screenshot & Video Gallery Viewer -->
             <div class="bg-slate-950 border-b border-slate-800 p-4 sm:p-6">
-                <!-- Main Active Screenshot Stage -->
+                <!-- Main Active Stage -->
                 <div class="relative aspect-video w-full max-h-[380px] rounded-xl overflow-hidden bg-slate-900 border border-slate-800 flex items-center justify-center group">
                     <img id="modal-main-img" src="" alt="Project Screenshot" class="w-full h-full object-contain bg-slate-950 transition-all duration-300">
+                    <div id="modal-video-wrapper" class="hidden w-full h-full relative bg-slate-950">
+                        <iframe
+                            id="modal-video-iframe"
+                            src=""
+                            title="Gameplay Video"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            class="w-full h-full border-0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                        <a id="modal-video-external-btn" href="#" target="_blank" rel="noopener noreferrer" class="absolute top-3 left-3 px-3 py-1.5 rounded-lg bg-slate-950/90 hover:bg-rose-600 text-slate-200 hover:text-white border border-slate-700 text-xs font-semibold flex items-center gap-1.5 transition-colors shadow-lg">
+                            <i class="fa-brands fa-youtube text-rose-500"></i>
+                            <span>Open on YouTube</span>
+                        </a>
+                    </div>
                     
                     <!-- Previous / Next Carousel Arrows -->
                     <button id="gallery-prev-btn" aria-label="Previous Screenshot" class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-slate-950/80 hover:bg-cyan-500 hover:text-slate-950 text-white border border-slate-700 flex items-center justify-center transition-all shadow-lg">
@@ -1082,31 +1091,55 @@
         const modal = document.getElementById('project-modal');
         const closeModalBtn = document.getElementById('close-modal-btn');
         const modalMainImg = document.getElementById('modal-main-img');
+        const modalVideoWrapper = document.getElementById('modal-video-wrapper');
+        const modalVideoIframe = document.getElementById('modal-video-iframe');
+        const modalVideoExternalBtn = document.getElementById('modal-video-external-btn');
         const modalThumbnails = document.getElementById('modal-thumbnails');
         let activeModalProject = null;
+        let activeMediaItems = [];
         let activeSlideIndex = 0;
 
+        function getYouTubeVideoId(url) {
+            if (!url) return null;
+            const match = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([^&?/]+)/);
+            return match ? match[1] : null;
+        }
+
         function updateModalGallery(index) {
-            if (!activeModalProject) return;
-            const total = activeModalProject.screenshots.length;
+            if (!activeModalProject || activeMediaItems.length === 0) return;
+            const total = activeMediaItems.length;
             activeSlideIndex = (index + total) % total;
 
-            const shot = activeModalProject.screenshots[activeSlideIndex];
-            const fallbackUrl = makePlaceholderUrl(
-                `${activeModalProject.title} — ${shot.caption}`,
-                activeModalProject.placeholderColor.bg,
-                activeModalProject.placeholderColor.text
-            );
+            const item = activeMediaItems[activeSlideIndex];
 
-            modalMainImg.onerror = function() {
-                this.onerror = null;
-                this.src = fallbackUrl;
-            };
-            modalMainImg.src = shot.src;
-            modalMainImg.alt = shot.caption;
+            if (item.type === 'video') {
+                if (modalMainImg) modalMainImg.classList.add('hidden');
+                if (modalVideoWrapper) modalVideoWrapper.classList.remove('hidden');
+                if (modalVideoIframe) modalVideoIframe.src = `https://www.youtube.com/embed/${item.videoId}?rel=0&playsinline=1`;
+                if (modalVideoExternalBtn) modalVideoExternalBtn.href = item.watchUrl;
+            } else {
+                if (modalVideoIframe) modalVideoIframe.src = '';
+                if (modalVideoWrapper) modalVideoWrapper.classList.add('hidden');
+                if (modalMainImg) {
+                    modalMainImg.classList.remove('hidden');
+
+                    const fallbackUrl = makePlaceholderUrl(
+                        `${activeModalProject.title} — ${item.caption}`,
+                        activeModalProject.placeholderColor.bg,
+                        activeModalProject.placeholderColor.text
+                    );
+
+                    modalMainImg.onerror = function() {
+                        this.onerror = null;
+                        this.src = fallbackUrl;
+                    };
+                    modalMainImg.src = item.src;
+                    modalMainImg.alt = item.caption;
+                }
+            }
 
             // Highlight active thumbnail
-            const thumbs = modalThumbnails.querySelectorAll('button');
+            const thumbs = modalThumbnails ? modalThumbnails.querySelectorAll('button') : [];
             thumbs.forEach((btn, i) => {
                 if (i === activeSlideIndex) {
                     btn.classList.add('ring-2', 'ring-cyan-400', 'opacity-100');
@@ -1126,28 +1159,66 @@
             document.getElementById('modal-subtitle').textContent = project.subtitle;
             document.getElementById('modal-description').textContent = project.summary;
 
+            // Build combined media list (YouTube videos first if available, followed by screenshots)
+            activeMediaItems = [];
+            const youtubeLinks = (project.links || []).filter(l => getYouTubeVideoId(l.url));
+            youtubeLinks.forEach((ytLink, idx) => {
+                const videoId = getYouTubeVideoId(ytLink.url);
+                const coverShot = project.screenshots[idx] || project.screenshots[0];
+                activeMediaItems.push({
+                    type: 'video',
+                    videoId: videoId,
+                    watchUrl: ytLink.url,
+                    label: ytLink.label,
+                    thumbSrc: coverShot ? coverShot.src : `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`
+                });
+            });
+
+            project.screenshots.forEach(shot => {
+                activeMediaItems.push({
+                    type: 'image',
+                    src: shot.src,
+                    caption: shot.caption
+                });
+            });
+
             // Render Thumbnails Strip
             modalThumbnails.innerHTML = '';
-            project.screenshots.forEach((shot, idx) => {
+            activeMediaItems.forEach((item, idx) => {
                 const thumbFallback = makePlaceholderUrl(
-                    `#${idx + 1}`,
+                    item.type === 'video' ? 'Video' : 'Preview',
                     project.placeholderColor.bg,
                     project.placeholderColor.text
                 );
                 const thumbBtn = document.createElement('button');
                 thumbBtn.type = 'button';
                 thumbBtn.className = 'relative aspect-video rounded-lg overflow-hidden bg-slate-900 border border-slate-700 hover:opacity-100 transition-all focus:outline-none';
-                thumbBtn.innerHTML = `
-                    <img 
-                        src="${shot.src}" 
-                        alt="${shot.caption}"
-                        onerror="this.onerror=null; this.src='${thumbFallback}';"
-                        class="w-full h-full object-cover"
-                    >
-                    <span class="absolute bottom-1 right-1 px-1.5 py-0.2 rounded bg-slate-950/85 text-[10px] font-mono text-white">
-                        #${idx + 1}
-                    </span>
-                `;
+                
+                if (item.type === 'video') {
+                    thumbBtn.innerHTML = `
+                        <img 
+                            src="${item.thumbSrc}" 
+                            alt="${item.label}"
+                            onerror="this.onerror=null; this.src='${thumbFallback}';"
+                            class="w-full h-full object-cover brightness-75"
+                        >
+                        <span class="absolute inset-0 flex items-center justify-center">
+                            <span class="w-7 h-7 rounded-full bg-rose-600 text-white flex items-center justify-center shadow-md">
+                                <i class="fa-solid fa-play text-[10px] ml-0.5"></i>
+                            </span>
+                        </span>
+                    `;
+                } else {
+                    thumbBtn.innerHTML = `
+                        <img 
+                            src="${item.src}" 
+                            alt="${item.caption}"
+                            onerror="this.onerror=null; this.src='${thumbFallback}';"
+                            class="w-full h-full object-cover"
+                        >
+                    `;
+                }
+
                 thumbBtn.addEventListener('click', () => updateModalGallery(idx));
                 modalThumbnails.appendChild(thumbBtn);
             });
@@ -1177,41 +1248,60 @@
 
             // Action Links
             const linksEl = document.getElementById('modal-links');
-            linksEl.innerHTML = project.links.map(link => 
-                `<a href="${link.url}" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl text-sm font-semibold flex items-center gap-2 transition-all ${link.style}">
-                    <i class="${link.icon}"></i>
-                    <span>${link.label}</span>
-                </a>`
-            ).join('');
+            if (linksEl) {
+                linksEl.innerHTML = (project.links || []).map(link => 
+                    `<a href="${link.url}" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl text-sm font-semibold flex items-center gap-2 transition-all ${link.style}">
+                        <i class="${link.icon}"></i>
+                        <span>${link.label}</span>
+                    </a>`
+                ).join('');
+            }
 
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
+            if (modal) {
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            }
             document.body.style.overflow = 'hidden';
         }
 
         function closeProjectModal() {
-            modal.classList.add('hidden');
-            modal.classList.remove('flex');
+            if (modalVideoIframe) modalVideoIframe.src = '';
+            if (modalVideoWrapper) modalVideoWrapper.classList.add('hidden');
+            if (modalMainImg) modalMainImg.classList.remove('hidden');
+            if (modal) {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }
             document.body.style.overflow = '';
             activeModalProject = null;
         }
 
-        document.getElementById('gallery-prev-btn').addEventListener('click', (e) => {
-            e.stopPropagation();
-            updateModalGallery(activeSlideIndex - 1);
-        });
+        const galleryPrevBtn = document.getElementById('gallery-prev-btn');
+        if (galleryPrevBtn) {
+            galleryPrevBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                updateModalGallery(activeSlideIndex - 1);
+            });
+        }
 
-        document.getElementById('gallery-next-btn').addEventListener('click', (e) => {
-            e.stopPropagation();
-            updateModalGallery(activeSlideIndex + 1);
-        });
+        const galleryNextBtn = document.getElementById('gallery-next-btn');
+        if (galleryNextBtn) {
+            galleryNextBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                updateModalGallery(activeSlideIndex + 1);
+            });
+        }
 
-        closeModalBtn.addEventListener('click', closeProjectModal);
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) closeProjectModal();
-        });
+        if (closeModalBtn) {
+            closeModalBtn.addEventListener('click', closeProjectModal);
+        }
+        if (modal) {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) closeProjectModal();
+            });
+        }
         document.addEventListener('keydown', (e) => {
-            if (modal.classList.contains('hidden')) return;
+            if (!modal || modal.classList.contains('hidden')) return;
             if (e.key === 'Escape') closeProjectModal();
             if (e.key === 'ArrowLeft') updateModalGallery(activeSlideIndex - 1);
             if (e.key === 'ArrowRight') updateModalGallery(activeSlideIndex + 1);
@@ -1366,7 +1456,8 @@
         // 8. INITIALIZE ON LOAD
         // ==========================================
         window.addEventListener('DOMContentLoaded', () => {
-            document.getElementById('current-year').textContent = new Date().getFullYear();
+            const yearEl = document.getElementById('current-year');
+            if (yearEl) yearEl.textContent = new Date().getFullYear();
             renderFeaturedProjects('all');
             renderCatalog();
         });
