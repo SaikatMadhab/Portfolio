@@ -659,11 +659,19 @@
                             src=""
                             title="Gameplay Video"
                             referrerpolicy="strict-origin-when-cross-origin"
-                            class="w-full h-full border-0"
+                            class="hidden w-full h-full border-0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen>
                         </iframe>
-                        <a id="modal-video-external-btn" href="#" target="_blank" rel="noopener noreferrer" class="absolute top-3 left-3 px-3 py-1.5 rounded-lg bg-slate-950/90 hover:bg-rose-600 text-slate-200 hover:text-white border border-slate-700 text-xs font-semibold flex items-center gap-1.5 transition-colors shadow-lg">
+                        <video
+                            id="modal-video-player"
+                            src=""
+                            controls
+                            playsinline
+                            preload="metadata"
+                            class="hidden w-full h-full object-contain bg-slate-950">
+                        </video>
+                        <a id="modal-video-external-btn" href="#" target="_blank" rel="noopener noreferrer" class="hidden absolute top-3 left-3 px-3 py-1.5 rounded-lg bg-slate-950/90 hover:bg-rose-600 text-slate-200 hover:text-white border border-slate-700 text-xs font-semibold flex items-center gap-1.5 transition-colors shadow-lg">
                             <i class="fa-brands fa-youtube text-rose-500"></i>
                             <span>Open on YouTube</span>
                         </a>
@@ -849,6 +857,40 @@
                 ]
             },
             {
+                id: 'cooking-team-restaurant',
+                title: 'Cooking Team: Restaurant Games',
+                subtitle: 'Cooking Simulation / Time Management • Game Developer',
+                category: 'mobile',
+                categoryLabel: 'Mobile • Simulation',
+                placeholderColor: { bg: '451a03', text: 'fbbf24' },
+                platforms: ['Android', 'iOS'],
+                tech: ['Unity', 'C#', 'Time Management', 'Mobile Optimization'],
+                summary: 'Worked on a mobile restaurant simulation game featuring fast-paced cooking and time-management gameplay. The game involves preparing food, managing customer orders, serving customers, upgrading kitchen equipment, unlocking restaurants, and progressing through challenging levels.',
+                screenshots: [
+                    { src: `${BASE_IMAGE_URL}CookingTeam/1.jpg`, caption: 'Screenshot 1: Fast-Paced Kitchen & Customer Order Gameplay' },
+                    { src: `${BASE_IMAGE_URL}CookingTeam/2.jpg`, caption: 'Screenshot 2: Food Preparation, Combos & Boosters' },
+                    { src: `${BASE_IMAGE_URL}CookingTeam/3.jpg`, caption: 'Screenshot 3: Kitchen Equipment & Restaurant Upgrades' },
+                    { src: `${BASE_IMAGE_URL}CookingTeam/4.jpg`, caption: 'Screenshot 4: Restaurant Customization & Level Progression' },
+                    { src: `${BASE_IMAGE_URL}CookingTeam/5.jpg`, caption: 'Screenshot 5: New Restaurant Unlock & Daily Challenges' },
+                    { src: `${BASE_IMAGE_URL}CookingTeam/6.jpg`, caption: 'Screenshot 6: High-Combo Serving & Reward Milestones' }
+                ],
+                contributions: [
+                    'Developed gameplay mechanics and systems using Unity and C#.',
+                    'Implemented cooking workflows, food preparation, customer orders, and serving mechanics.',
+                    'Worked on level progression, gameplay difficulty, and reward systems.',
+                    'Developed restaurant and kitchen upgrade systems.',
+                    'Implemented boosters, combos, and gameplay progression mechanics.',
+                    'Integrated gameplay UI, animations, feedback, and player interactions.',
+                    'Worked on restaurant customization and progression features.',
+                    'Debugged gameplay issues and optimized performance for mobile devices.'
+                ],
+                links: [
+                    { label: 'Gameplay Video', url: 'https://www.youtube.com/watch?v=vYp1gmOX9JE', icon: 'fa-brands fa-youtube', style: 'bg-rose-600 hover:bg-rose-500 text-white' },
+                    { label: 'Google Play Store', url: 'https://play.google.com/store/apps/details?id=com.cookingteamrestaurant', icon: 'fa-brands fa-google-play', style: 'bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold' },
+                    { label: 'Apple App Store', url: 'https://apps.apple.com/hk/app/cooking-team-restaurant-games/id1522265683?l=en-GB', icon: 'fa-brands fa-app-store-ios', style: 'bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold' }
+                ]
+            },
+            {
                 id: 'human-anatomy-vr',
                 title: 'Human Anatomy VR Simulation',
                 subtitle: 'Standalone VR Educational Simulation • Oculus Quest',
@@ -878,15 +920,51 @@
                 ]
             },
             {
+                id: 'skylect-vr',
+                title: 'SKYLECT – Immersive Education & VR Collaboration Platform',
+                subtitle: 'Educational VR / Metaverse / Collaborative Virtual Environment • Unity Developer / VR Developer',
+                category: 'vr',
+                categoryLabel: 'VR / Collaboration',
+                placeholderColor: { bg: '0f172a', text: '38bdf8' },
+                platforms: ['VR Headsets', 'Windows', 'Android', 'Huawei AppGallery', 'VIVEPORT'],
+                tech: ['Unity', 'C#', 'VR Interactions', 'Avatar Collaboration'],
+                summary: 'Contributed to the development of SKYLECT, a cross-platform immersive learning and collaboration platform designed for education, professional training, and interactive virtual experiences. The platform enables users to explore virtual environments, interact with 3D content, collaborate with other users through avatars, and participate in immersive learning and training sessions.',
+                screenshots: [
+                    { src: `${BASE_IMAGE_URL}Skylect/1.jpg`, caption: 'Screenshot 1: SKYLECT Collaborative Virtual Environment' },
+                    { src: `${BASE_IMAGE_URL}Skylect/2.jpg`, caption: 'Screenshot 2: Avatar Interaction & Multi-User Learning Session' },
+                    { src: `${BASE_IMAGE_URL}Skylect/3.jpg`, caption: 'Screenshot 3: Interactive 3D Educational Content & VR UI' },
+                    { src: `${BASE_IMAGE_URL}Skylect/4.jpg`, caption: 'Screenshot 4: Cross-Platform Virtual Training Workspace' },
+                    { src: `${BASE_IMAGE_URL}Skylect/5.jpg`, caption: 'Screenshot 5: VR Navigation & Spatial Scene Exploration' },
+                    { src: `${BASE_IMAGE_URL}Skylect/6.jpg`, caption: 'Screenshot 6: VR Navigation & Spatial Scene Exploration' }
+                ],
+                contributions: [
+                    'Developed immersive virtual experiences and interactive systems using Unity and C#.',
+                    'Implemented VR interactions, navigation, and user interaction systems.',
+                    'Worked on avatar-based interaction and collaborative virtual environments.',
+                    'Integrated interactive 3D content and educational experiences.',
+                    'Developed UI systems and navigation for VR and non-VR environments.',
+                    'Supported cross-platform deployment across VR headsets, desktop, and mobile devices.',
+                    'Worked on platform compatibility, optimization, and performance improvements.',
+                    'Contributed to interactive learning, virtual training, and multi-user experiences.',
+                    'Implemented and maintained gameplay/application systems and resolved technical issues.'
+                ],
+                links: [
+                    { label: 'Gameplay Video', url: 'https://assets-global.viveport.com/vr_developer_published_assets/app/ee2fc762-4865-4077-a0c8-873cbb0b8494/video/video_1_v1597905491.mp4', icon: 'fa-solid fa-film', style: 'bg-rose-600 hover:bg-rose-500 text-white' },
+                    { label: 'Official Website', url: 'https://www.skylect.com/', icon: 'fa-solid fa-globe', style: 'bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold' },
+                    { label: 'Huawei AppGallery', url: 'https://appgallery.huawei.com/#/app/C103236453', icon: 'fa-solid fa-mobile-screen-button', style: 'bg-rose-600 hover:bg-rose-500 text-white' },
+                    { label: 'VIVEPORT', url: 'https://www.viveport.com/ee2fc762-4865-4077-a0c8-873cbb0b8494', icon: 'fa-solid fa-vr-cardboard', style: 'bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold' }
+                ]
+            },
+            {
                 id: 'lacuna',
                 title: 'Lacuna – A Sci-Fi Noir Adventure',
                 subtitle: 'Console Porting • Senior Unity Game Developer',
                 category: 'console',
                 categoryLabel: 'Console Porting',
                 placeholderColor: { bg: '0f172a', text: '38bdf8' },
-                platforms: ['Nintendo Switch', 'Xbox', 'PlayStation'],
+                platforms: ['Nintendo Switch', 'Xbox', 'PlayStation 5'],
                 tech: ['Unity', 'C#', 'Rewired', 'Console SDKs'],
-                summary: 'Ported and adapted the critically acclaimed story-driven 2D sci-fi detective adventure to Nintendo Switch, Xbox, and PlayStation, delivering seamless gamepad controls and certified console performance.',
+                summary: 'Ported and adapted the critically acclaimed story-driven 2D sci-fi detective adventure to Nintendo Switch, Xbox, and PlayStation 5, delivering seamless gamepad controls and certified console performance.',
                 screenshots: [
                     { src: `${BASE_IMAGE_URL}Lacuna/1.png`, caption: 'Screenshot 1: Lacuna Key Art & Console Cover' },
                     { src: `${BASE_IMAGE_URL}Lacuna/2.png`, caption: 'Screenshot 2: Stargazer Bistro Dialogue System' },
@@ -936,74 +1014,6 @@
                 links: [
                     { label: 'Console Trailer', url: 'https://www.youtube.com/watch?v=NHzktImRA8Q', icon: 'fa-brands fa-youtube', style: 'bg-rose-600 hover:bg-rose-500 text-white' },
                     { label: 'Console Gameplay', url: 'https://www.youtube.com/watch?v=G5iJXs7Df-c', icon: 'fa-solid fa-play', style: 'bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold' }
-                ]
-            },
-            {
-                id: 'cooking-team-restaurant',
-                title: 'Cooking Team: Restaurant Games',
-                subtitle: 'Cooking Simulation / Time Management • Game Developer',
-                category: 'mobile',
-                categoryLabel: 'Mobile Simulation',
-                placeholderColor: { bg: '451a03', text: 'fbbf24' },
-                platforms: ['Android'],
-                tech: ['Unity', 'C#', 'Time Management', 'Mobile UI/UX'],
-                summary: 'Worked on a mobile restaurant simulation game featuring fast-paced cooking and time-management gameplay. The game involves preparing food, managing customer orders, serving customers, upgrading kitchen equipment, unlocking restaurants, and progressing through challenging levels.',
-                screenshots: [
-                    { src: `${BASE_IMAGE_URL}CookingTeam/1.jpg`, caption: 'Screenshot 1: Cooking Team Restaurant Gameplay' },
-                    { src: `${BASE_IMAGE_URL}CookingTeam/2.jpg`, caption: 'Screenshot 2: Customer Orders & Food Preparation' },
-                    { src: `${BASE_IMAGE_URL}CookingTeam/3.jpg`, caption: 'Screenshot 3: Kitchen Equipment & Restaurant Upgrades' },
-                    { src: `${BASE_IMAGE_URL}CookingTeam/4.jpg`, caption: 'Screenshot 4: Combos, Boosters & Level Progression' },
-                    { src: `${BASE_IMAGE_URL}CookingTeam/5.jpg`, caption: 'Screenshot 5: Combos, Boosters & Level Progression' },
-                    { src: `${BASE_IMAGE_URL}CookingTeam/6.jpg`, caption: 'Screenshot 6: Combos, Boosters & Level Progression' }
-                ],
-                contributions: [
-                    'Developed gameplay mechanics and systems using Unity and C#.',
-                    'Implemented cooking workflows, food preparation, customer orders, and serving mechanics.',
-                    'Worked on level progression, gameplay difficulty, and reward systems.',
-                    'Developed restaurant and kitchen upgrade systems.',
-                    'Implemented boosters, combos, and gameplay progression mechanics.',
-                    'Integrated gameplay UI, animations, feedback, and player interactions.',
-                    'Worked on restaurant customization and progression features.',
-                    'Debugged gameplay issues and optimized performance for mobile devices.'
-                ],
-                links: [
-                    { label: 'Google Play Store', url: 'https://play.google.com/store/apps/details?id=com.cookingteamrestaurant', icon: 'fa-brands fa-google-play', style: 'bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold' },
-                    { label: 'Apple App Store', url: 'https://apps.apple.com/hk/app/cooking-team-restaurant-games/id1522265683?l=en-GB', icon: 'fa-brands fa-app-store-ios', style: 'bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold' }
-                ]
-            },
-            {
-                id: 'skylect-vr',
-                title: 'SKYLECT – Immersive Education & VR Collaboration Platform',
-                subtitle: 'Educational VR / Metaverse / Collaborative Virtual Environment • Unity Developer / VR Developer',
-                category: 'vr',
-                categoryLabel: 'VR / Collaboration',
-                placeholderColor: { bg: '0f172a', text: '38bdf8' },
-                platforms: ['VR Headsets', 'Windows', 'Android', 'Huawei AppGallery', 'VIVEPORT'],
-                tech: ['Unity', 'C#', 'VR Interactions', 'Avatar Collaboration'],
-                summary: 'Contributed to the development of SKYLECT, a cross-platform immersive learning and collaboration platform designed for education, professional training, and interactive virtual experiences. The platform enables users to explore virtual environments, interact with 3D content, collaborate with other users through avatars, and participate in immersive learning and training sessions.',
-                screenshots: [
-                    { src: `${BASE_IMAGE_URL}Skylect/1.jpg`, caption: 'Screenshot 1: SKYLECT Collaborative Virtual Environment' },
-                    { src: `${BASE_IMAGE_URL}Skylect/2.jpg`, caption: 'Screenshot 2: Avatar Interaction & Multi-User Learning Session' },
-                    { src: `${BASE_IMAGE_URL}Skylect/3.jpg`, caption: 'Screenshot 3: Interactive 3D Educational Content & VR UI' },
-                    { src: `${BASE_IMAGE_URL}Skylect/4.jpg`, caption: 'Screenshot 4: Cross-Platform Virtual Training Workspace' },
-                    { src: `${BASE_IMAGE_URL}Skylect/5.jpg`, caption: 'Screenshot 5: VR Navigation & Spatial Scene Exploration' },
-                    { src: `${BASE_IMAGE_URL}Skylect/6.jpg`, caption: 'Screenshot 6: VR Navigation & Spatial Scene Exploration' }
-                ],
-                contributions: [
-                    'Developed immersive virtual experiences and interactive systems using Unity and C#.',
-                    'Implemented VR interactions, navigation, and user interaction systems.',
-                    'Worked on avatar-based interaction and collaborative virtual environments.',
-                    'Integrated interactive 3D content and educational experiences.',
-                    'Developed UI systems and navigation for VR and non-VR environments.',
-                    'Supported cross-platform deployment across VR headsets, desktop, and mobile devices.',
-                    'Worked on platform compatibility, optimization, and performance improvements.',
-                    'Contributed to interactive learning, virtual training, and multi-user experiences.',
-                    'Implemented and maintained gameplay/application systems and resolved technical issues.'
-                ],
-                links: [
-                    { label: 'Official Website', url: 'https://www.skylect.com/', icon: 'fa-solid fa-globe', style: 'bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold' },
-                    { label: 'Huawei AppGallery', url: 'https://appgallery.huawei.com/#/app/C103236453', icon: 'fa-solid fa-mobile-screen-button', style: 'bg-rose-600 hover:bg-rose-500 text-white' },
-                    { label: 'VIVEPORT', url: 'https://www.viveport.com/ee2fc762-4865-4077-a0c8-873cbb0b8494', icon: 'fa-solid fa-vr-cardboard', style: 'bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold' }
                 ]
             }
         ];
@@ -1160,7 +1170,7 @@
 
                 const mediaIconsHtml = (project.links || []).map(link => {
                     let badgeStyle = 'bg-slate-800/90 text-slate-300 border-slate-700 hover:border-cyan-400 hover:text-cyan-300';
-                    if (link.url.includes('youtube.com') || link.url.includes('youtu.be')) {
+                    if (link.url.includes('youtube.com') || link.url.includes('youtu.be') || link.url.endsWith('.mp4')) {
                         badgeStyle = 'bg-rose-600/20 text-rose-400 border-rose-500/40 hover:bg-rose-600/35';
                     } else if (link.url.includes('play.unity.com')) {
                         badgeStyle = 'bg-cyan-500/15 text-cyan-300 border-cyan-500/40 hover:bg-cyan-500/30';
@@ -1265,6 +1275,7 @@
         const modalMainImg = document.getElementById('modal-main-img');
         const modalVideoWrapper = document.getElementById('modal-video-wrapper');
         const modalVideoIframe = document.getElementById('modal-video-iframe');
+        const modalVideoPlayer = document.getElementById('modal-video-player');
         const modalVideoExternalBtn = document.getElementById('modal-video-external-btn');
         const modalThumbnails = document.getElementById('modal-thumbnails');
         let activeModalProject = null;
@@ -1277,6 +1288,27 @@
             return match ? match[1] : null;
         }
 
+        function isDirectVideoUrl(url) {
+            if (!url) return false;
+            return /\.(mp4|webm|ogg)(\?.*)?$/i.test(url);
+        }
+
+        function resetVideoPlayback() {
+            if (modalVideoIframe) {
+                modalVideoIframe.src = '';
+                modalVideoIframe.classList.add('hidden');
+            }
+            if (modalVideoPlayer) {
+                modalVideoPlayer.pause();
+                modalVideoPlayer.removeAttribute('src');
+                modalVideoPlayer.load();
+                modalVideoPlayer.classList.add('hidden');
+            }
+            if (modalVideoExternalBtn) {
+                modalVideoExternalBtn.classList.add('hidden');
+            }
+        }
+
         function updateModalGallery(index) {
             if (!activeModalProject || activeMediaItems.length === 0) return;
             const total = activeMediaItems.length;
@@ -1285,12 +1317,23 @@
             const item = activeMediaItems[activeSlideIndex];
 
             if (item.type === 'video') {
+                resetVideoPlayback();
                 if (modalMainImg) modalMainImg.classList.add('hidden');
                 if (modalVideoWrapper) modalVideoWrapper.classList.remove('hidden');
-                if (modalVideoIframe) modalVideoIframe.src = `https://www.youtube.com/embed/${item.videoId}?rel=0&playsinline=1`;
-                if (modalVideoExternalBtn) modalVideoExternalBtn.href = item.watchUrl;
+
+                if (item.videoKind === 'youtube' && modalVideoIframe) {
+                    modalVideoIframe.src = `https://www.youtube.com/embed/${item.videoId}?rel=0&playsinline=1`;
+                    modalVideoIframe.classList.remove('hidden');
+                    if (modalVideoExternalBtn) {
+                        modalVideoExternalBtn.href = item.watchUrl;
+                        modalVideoExternalBtn.classList.remove('hidden');
+                    }
+                } else if (item.videoKind === 'file' && modalVideoPlayer) {
+                    modalVideoPlayer.src = item.watchUrl;
+                    modalVideoPlayer.classList.remove('hidden');
+                }
             } else {
-                if (modalVideoIframe) modalVideoIframe.src = '';
+                resetVideoPlayback();
                 if (modalVideoWrapper) modalVideoWrapper.classList.add('hidden');
                 if (modalMainImg) {
                     modalMainImg.classList.remove('hidden');
@@ -1331,18 +1374,19 @@
             document.getElementById('modal-subtitle').textContent = project.subtitle;
             document.getElementById('modal-description').textContent = project.summary;
 
-            // Build combined media list (YouTube videos first if available, followed by screenshots)
+            // Build combined media list (Videos first if available, followed by screenshots)
             activeMediaItems = [];
-            const youtubeLinks = (project.links || []).filter(l => getYouTubeVideoId(l.url));
-            youtubeLinks.forEach((ytLink, idx) => {
-                const videoId = getYouTubeVideoId(ytLink.url);
+            const videoLinks = (project.links || []).filter(l => getYouTubeVideoId(l.url) || isDirectVideoUrl(l.url));
+            videoLinks.forEach((vidLink, idx) => {
+                const videoId = getYouTubeVideoId(vidLink.url);
                 const coverShot = project.screenshots[idx] || project.screenshots[0];
                 activeMediaItems.push({
                     type: 'video',
+                    videoKind: videoId ? 'youtube' : 'file',
                     videoId: videoId,
-                    watchUrl: ytLink.url,
-                    label: ytLink.label,
-                    thumbSrc: coverShot ? coverShot.src : `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`
+                    watchUrl: vidLink.url,
+                    label: vidLink.label,
+                    thumbSrc: coverShot ? coverShot.src : (videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : makePlaceholderUrl(project.title, project.placeholderColor.bg, project.placeholderColor.text))
                 });
             });
 
@@ -1437,7 +1481,7 @@
         }
 
         function closeProjectModal() {
-            if (modalVideoIframe) modalVideoIframe.src = '';
+            resetVideoPlayback();
             if (modalVideoWrapper) modalVideoWrapper.classList.add('hidden');
             if (modalMainImg) modalMainImg.classList.remove('hidden');
             if (modal) {
