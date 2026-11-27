@@ -91,8 +91,13 @@
             <div class="flex items-center justify-between h-16">
                 <!-- Brand / Logo -->
                 <a href="#about" class="flex items-center gap-3 group">
-                    <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-cyan-500 to-emerald-500 flex items-center justify-center text-slate-950 font-display font-bold text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
-                        SM
+                    <div class="w-9 h-9 rounded-lg overflow-hidden bg-slate-900 border border-cyan-500/40 shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform shrink-0">
+                        <img
+                            src="https://saikatmadhab.github.io/Portfolio/Profile.jpg"
+                            alt="Saikat Mandal"
+                            onerror="this.onerror=null; this.src='https://placehold.co/128x128/0f172a/22d3ee?text=SM';"
+                            class="w-full h-full object-cover"
+                        >
                     </div>
                     <div>
                         <span class="font-display font-bold text-xl tracking-wide text-white block leading-none">SAIKAT MANDAL</span>
@@ -212,16 +217,6 @@
                             </div>
                         </div>
 
-                        <div class="flex items-center justify-between pb-4 mb-4 border-b border-slate-800">
-                            <div class="flex items-center gap-2">
-                                <span class="w-3 h-3 rounded-full bg-rose-500"></span>
-                                <span class="w-3 h-3 rounded-full bg-amber-500"></span>
-                                <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
-                                <span class="ml-2 text-xs font-mono text-slate-400">DeveloperProfile.cs — Unity Inspector</span>
-                            </div>
-                            <span class="px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-400 text-[11px] font-mono">C# / .NET</span>
-                        </div>
-
                         <div class="space-y-4 font-mono text-xs sm:text-sm">
                             <div class="bg-slate-950/80 p-3.5 rounded-xl border border-slate-800/80">
                                 <div class="flex flex-wrap gap-1.5 mt-2">
@@ -281,7 +276,7 @@
                 <!-- Category Filter Buttons -->
                 <div id="featured-filters" class="flex flex-wrap gap-2">
                     <button data-filter="all" class="filter-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-cyan-500 text-slate-950 shadow-md shadow-cyan-500/20 transition-all">
-                        All Projects (7)
+                        All Projects (9)
                     </button>
                     <button data-filter="mobile" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-slate-800/90 text-slate-300 hover:text-white border border-slate-700 transition-all">
                         Mobile
@@ -889,9 +884,9 @@
                 category: 'console',
                 categoryLabel: 'Console Porting',
                 placeholderColor: { bg: '0f172a', text: '38bdf8' },
-                platforms: ['Nintendo Switch', 'Xbox', 'PlayStation 5'],
+                platforms: ['Nintendo Switch', 'Xbox', 'PlayStation'],
                 tech: ['Unity', 'C#', 'Rewired', 'Console SDKs'],
-                summary: 'Ported and adapted the critically acclaimed story-driven 2D sci-fi detective adventure to Nintendo Switch, Xbox, and PlayStation 5, delivering seamless gamepad controls and certified console performance.',
+                summary: 'Ported and adapted the critically acclaimed story-driven 2D sci-fi detective adventure to Nintendo Switch, Xbox, and PlayStation, delivering seamless gamepad controls and certified console performance.',
                 screenshots: [
                     { src: `${BASE_IMAGE_URL}Lacuna/1.png`, caption: 'Screenshot 1: Lacuna Key Art & Console Cover' },
                     { src: `${BASE_IMAGE_URL}Lacuna/2.png`, caption: 'Screenshot 2: Stargazer Bistro Dialogue System' },
@@ -942,6 +937,74 @@
                     { label: 'Console Trailer', url: 'https://www.youtube.com/watch?v=NHzktImRA8Q', icon: 'fa-brands fa-youtube', style: 'bg-rose-600 hover:bg-rose-500 text-white' },
                     { label: 'Console Gameplay', url: 'https://www.youtube.com/watch?v=G5iJXs7Df-c', icon: 'fa-solid fa-play', style: 'bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold' }
                 ]
+            },
+            {
+                id: 'cooking-team-restaurant',
+                title: 'Cooking Team: Restaurant Games',
+                subtitle: 'Cooking Simulation / Time Management • Game Developer',
+                category: 'mobile',
+                categoryLabel: 'Mobile Simulation',
+                placeholderColor: { bg: '451a03', text: 'fbbf24' },
+                platforms: ['Android'],
+                tech: ['Unity', 'C#', 'Time Management', 'Mobile UI/UX'],
+                summary: 'Worked on a mobile restaurant simulation game featuring fast-paced cooking and time-management gameplay. The game involves preparing food, managing customer orders, serving customers, upgrading kitchen equipment, unlocking restaurants, and progressing through challenging levels.',
+                screenshots: [
+                    { src: `${BASE_IMAGE_URL}CookingTeam/1.png`, caption: 'Screenshot 1: Cooking Team Restaurant Gameplay' },
+                    { src: `${BASE_IMAGE_URL}CookingTeam/2.png`, caption: 'Screenshot 2: Customer Orders & Food Preparation' },
+                    { src: `${BASE_IMAGE_URL}CookingTeam/3.png`, caption: 'Screenshot 3: Kitchen Equipment & Restaurant Upgrades' },
+                    { src: `${BASE_IMAGE_URL}CookingTeam/4.png`, caption: 'Screenshot 4: Combos, Boosters & Level Progression' },
+                    { src: `${BASE_IMAGE_URL}CookingTeam/5.png`, caption: 'Screenshot 5: Combos, Boosters & Level Progression' },
+                    { src: `${BASE_IMAGE_URL}CookingTeam/6.png`, caption: 'Screenshot 6: Combos, Boosters & Level Progression' }
+                ],
+                contributions: [
+                    'Developed gameplay mechanics and systems using Unity and C#.',
+                    'Implemented cooking workflows, food preparation, customer orders, and serving mechanics.',
+                    'Worked on level progression, gameplay difficulty, and reward systems.',
+                    'Developed restaurant and kitchen upgrade systems.',
+                    'Implemented boosters, combos, and gameplay progression mechanics.',
+                    'Integrated gameplay UI, animations, feedback, and player interactions.',
+                    'Worked on restaurant customization and progression features.',
+                    'Debugged gameplay issues and optimized performance for mobile devices.'
+                ],
+                links: [
+                    { label: 'Google Play Store', url: 'https://play.google.com/store/apps/details?id=com.cookingteamrestaurant', icon: 'fa-brands fa-google-play', style: 'bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold' },
+                    { label: 'Apple App Store', url: 'https://apps.apple.com/hk/app/cooking-team-restaurant-games/id1522265683?l=en-GB', icon: 'fa-brands fa-app-store-ios', style: 'bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold' }
+                ]
+            },
+            {
+                id: 'skylect-vr',
+                title: 'SKYLECT – Immersive Education & VR Collaboration Platform',
+                subtitle: 'Educational VR / Metaverse / Collaborative Virtual Environment • Unity Developer / VR Developer',
+                category: 'vr',
+                categoryLabel: 'VR / Collaboration',
+                placeholderColor: { bg: '0f172a', text: '38bdf8' },
+                platforms: ['VR Headsets', 'Windows', 'Android', 'Huawei AppGallery', 'VIVEPORT'],
+                tech: ['Unity', 'C#', 'VR Interactions', 'Avatar Collaboration'],
+                summary: 'Contributed to the development of SKYLECT, a cross-platform immersive learning and collaboration platform designed for education, professional training, and interactive virtual experiences. The platform enables users to explore virtual environments, interact with 3D content, collaborate with other users through avatars, and participate in immersive learning and training sessions.',
+                screenshots: [
+                    { src: `${BASE_IMAGE_URL}Skylect/1.png`, caption: 'Screenshot 1: SKYLECT Collaborative Virtual Environment' },
+                    { src: `${BASE_IMAGE_URL}Skylect/2.png`, caption: 'Screenshot 2: Avatar Interaction & Multi-User Learning Session' },
+                    { src: `${BASE_IMAGE_URL}Skylect/3.png`, caption: 'Screenshot 3: Interactive 3D Educational Content & VR UI' },
+                    { src: `${BASE_IMAGE_URL}Skylect/4.png`, caption: 'Screenshot 4: Cross-Platform Virtual Training Workspace' },
+                    { src: `${BASE_IMAGE_URL}Skylect/5.png`, caption: 'Screenshot 5: VR Navigation & Spatial Scene Exploration' },
+                    { src: `${BASE_IMAGE_URL}Skylect/6.png`, caption: 'Screenshot 6: VR Navigation & Spatial Scene Exploration' }
+                ],
+                contributions: [
+                    'Developed immersive virtual experiences and interactive systems using Unity and C#.',
+                    'Implemented VR interactions, navigation, and user interaction systems.',
+                    'Worked on avatar-based interaction and collaborative virtual environments.',
+                    'Integrated interactive 3D content and educational experiences.',
+                    'Developed UI systems and navigation for VR and non-VR environments.',
+                    'Supported cross-platform deployment across VR headsets, desktop, and mobile devices.',
+                    'Worked on platform compatibility, optimization, and performance improvements.',
+                    'Contributed to interactive learning, virtual training, and multi-user experiences.',
+                    'Implemented and maintained gameplay/application systems and resolved technical issues.'
+                ],
+                links: [
+                    { label: 'Official Website', url: 'https://www.skylect.com/', icon: 'fa-solid fa-globe', style: 'bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold' },
+                    { label: 'Huawei AppGallery', url: 'https://appgallery.huawei.com/#/app/C103236453', icon: 'fa-solid fa-mobile-screen-button', style: 'bg-rose-600 hover:bg-rose-500 text-white' },
+                    { label: 'VIVEPORT', url: 'https://www.viveport.com/ee2fc762-4865-4077-a0c8-873cbb0b8494', icon: 'fa-solid fa-vr-cardboard', style: 'bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold' }
+                ]
             }
         ];
 
@@ -950,32 +1013,122 @@
         // ==========================================
         const otherProjects = [
             { name: 'L&T', category: 'utility', badge: 'VR (Cardboard / Oculus Go)', badgeColor: 'purple', desc: 'Google Cardboard and Oculus Go VR application demonstrating L&T construction processes.' },
-            { name: 'Skylect', category: 'utility', badge: 'Play Store • EdTech', badgeColor: 'cyan', desc: 'Collaboration and learning software for educational institutions and businesses.' },
-            { name: 'RoboChef', category: 'utility', badge: 'App Store • EdTech', badgeColor: 'cyan', desc: 'Interactive educational game teaching logic and culinary sequencing.' },
+            {
+                name: 'RoboChef',
+                category: 'utility',
+                badge: 'App Store • EdTech',
+                badgeColor: 'cyan',
+                desc: 'Interactive educational game teaching logic and culinary sequencing.',
+                links: [
+                    { label: 'Apple App Store', url: 'https://apps.apple.com/us/search?term=RoboChef', icon: 'fa-brands fa-app-store-ios', store: 'apple' }
+                ]
+            },
             { name: 'Image Slider', category: 'utility', badge: 'Windows Utility', badgeColor: 'purple', desc: 'Lightweight desktop image-viewer and slideshow application for Windows.' },
             { name: 'Bengali Keyboard', category: 'utility', badge: 'Windows Utility', badgeColor: 'purple', desc: 'Custom phonetic/layout Bengali typing keyboard utility for Windows.' },
             { name: 'Computer Shutdowner', category: 'utility', badge: 'Windows Utility', badgeColor: 'purple', desc: 'Windows system utility to schedule automated shutdown, restart, or log off.' },
             { name: 'Application/File Opener', category: 'utility', badge: 'Windows Utility', badgeColor: 'purple', desc: 'Windows productivity utility to launch applications or files on a custom timer.' },
-            { name: 'SmartFeud', category: 'board', badge: 'Play Store', badgeColor: 'emerald', desc: 'Online multiplayer Scrabble-style word game similar to WordFeud.' },
+            {
+                name: 'SmartFeud',
+                category: 'board',
+                badge: 'Play Store',
+                badgeColor: 'emerald',
+                desc: 'Online multiplayer Scrabble-style word game similar to WordFeud.',
+                links: [
+                    { label: 'Google Play Store', url: 'https://play.google.com/store/search?q=SmartFeud&c=apps', icon: 'fa-brands fa-google-play', store: 'play' }
+                ]
+            },
             { name: 'Word Checker', category: 'board', badge: 'Word Game', badgeColor: 'slate', desc: 'Fast-paced vocabulary validation and word-checking puzzle game.' },
             { name: 'Black Jack', category: 'board', badge: 'Single & Multiplayer', badgeColor: 'amber', desc: 'Single-player and multiplayer casino blackjack card game.' },
             { name: 'Slot Machine', category: 'board', badge: 'Casino', badgeColor: 'slate', desc: 'Classic casino slot-machine simulation with animated reels and payout logic.' },
             { name: 'Ludo Kill', category: 'board', badge: 'Wi-Fi Hotspot & AI', badgeColor: 'cyan', desc: 'Ludo board game featuring custom combat rules, local Wi-Fi hotspot multiplayer, and AI opponents.' },
-            { name: 'The Money Quiz', category: 'board', badge: 'Play Store', badgeColor: 'emerald', desc: 'Interactive general knowledge and trivia challenge game.' },
-            { name: 'Chip In Poker', category: 'board', badge: 'Play Store • Multiplayer', badgeColor: 'emerald', desc: 'Online multiplayer Texas Hold’em style poker game.' },
-            { name: 'Ultimate Battle Checker', category: 'board', badge: 'Play Store • Multiplayer', badgeColor: 'emerald', desc: 'Single-player and multiplayer strategy checkers game.' },
-            { name: "Cooking Team Chef's Roger Restaurant Games", category: 'casual', badge: 'Play Store', badgeColor: 'emerald', desc: 'Cooking and restaurant-decoration game with detailed isometric environments.' },
-            { name: 'Cavern Climbers', category: 'casual', badge: 'Play Store', badgeColor: 'emerald', desc: 'Fast-paced platformer focused on combo jumping and gem collection.' },
+            {
+                name: 'The Money Quiz',
+                category: 'board',
+                badge: 'Play Store',
+                badgeColor: 'emerald',
+                desc: 'Interactive general knowledge and trivia challenge game.',
+                links: [
+                    { label: 'Google Play Store', url: 'https://play.google.com/store/search?q=The%20Money%20Quiz&c=apps', icon: 'fa-brands fa-google-play', store: 'play' }
+                ]
+            },
+            {
+                name: 'Chip In Poker',
+                category: 'board',
+                badge: 'Play Store • Multiplayer',
+                badgeColor: 'emerald',
+                desc: 'Online multiplayer Texas Hold’em style poker game.',
+                links: [
+                    { label: 'Google Play Store', url: 'https://play.google.com/store/search?q=Chip%20In%20Poker&c=apps', icon: 'fa-brands fa-google-play', store: 'play' }
+                ]
+            },
+            {
+                name: 'Ultimate Battle Checker',
+                category: 'board',
+                badge: 'Play Store • Multiplayer',
+                badgeColor: 'emerald',
+                desc: 'Single-player and multiplayer strategy checkers game.',
+                links: [
+                    { label: 'Google Play Store', url: 'https://play.google.com/store/search?q=Ultimate%20Battle%20Checker&c=apps', icon: 'fa-brands fa-google-play', store: 'play' }
+                ]
+            },
+            {
+                name: 'Cavern Climbers',
+                category: 'casual',
+                badge: 'Play Store',
+                badgeColor: 'emerald',
+                desc: 'Fast-paced platformer focused on combo jumping and gem collection.',
+                links: [
+                    { label: 'Google Play Store', url: 'https://play.google.com/store/search?q=Cavern%20Climbers&c=apps', icon: 'fa-brands fa-google-play', store: 'play' }
+                ]
+            },
             { name: 'Voxo Farm', category: 'casual', badge: 'In Progress', badgeColor: 'amber', desc: 'Stylized voxel farming simulator featuring crop management and expansion (in progress).' },
             { name: 'Rock Balancing', category: 'casual', badge: 'Physics Arcade', badgeColor: 'slate', desc: 'Precision physics game about balancing an object on a movable rock.' },
             { name: 'Obstacle Passing', category: 'casual', badge: '2D Arcade', badgeColor: 'slate', desc: '2D reflex game involving top-down moving obstacles and precision gap navigation.' },
             { name: 'Space Shuttle', category: 'casual', badge: '2D Arcade', badgeColor: 'slate', desc: '2D space-shuttle navigation game set inside a hazardous sci-fi tunnel.' },
             { name: "Nero's Adventure", category: 'casual', badge: '2D Platformer', badgeColor: 'slate', desc: 'Classic arcade side-scrolling adventure platformer inspired by Super Mario.' },
             { name: 'Garden Makeover', category: 'casual', badge: 'Simulation', badgeColor: 'slate', desc: 'Isometric garden-decoration and landscape design simulation game.' },
-            { name: 'Helicopter Man', category: 'casual', badge: 'Play Store', badgeColor: 'emerald', desc: 'Endless arcade flight and obstacle-dodging mobile game.' },
-            { name: 'Speed Gods', category: 'casual', badge: 'Play Store | App Store', badgeColor: 'emerald', desc: 'High-speed endless arcade racing game across dynamic highways.' },
-            { name: 'Gang Wars: Battle Royale', category: 'multiplayer', badge: 'Play Store • Photon/PlayFab', badgeColor: 'amber', desc: 'Single-player and multiplayer game using Photon networking, PlayFab dedicated-server hosting, and sockets for private matches.' },
-            { name: 'Panzer Fury', category: 'multiplayer', badge: 'Play Store | App Store', badgeColor: 'emerald', desc: 'Single-player and multiplayer tank combat game powered by Photon networking.' },
+            {
+                name: 'Helicopter Man',
+                category: 'casual',
+                badge: 'Play Store',
+                badgeColor: 'emerald',
+                desc: 'Endless arcade flight and obstacle-dodging mobile game.',
+                links: [
+                    { label: 'Google Play Store', url: 'https://play.google.com/store/search?q=Helicopter%20Man&c=apps', icon: 'fa-brands fa-google-play', store: 'play' }
+                ]
+            },
+            {
+                name: 'Speed Gods',
+                category: 'casual',
+                badge: 'Play Store | App Store',
+                badgeColor: 'emerald',
+                desc: 'High-speed endless arcade racing game across dynamic highways.',
+                links: [
+                    { label: 'Google Play Store', url: 'https://play.google.com/store/search?q=Speed%20Gods&c=apps', icon: 'fa-brands fa-google-play', store: 'play' },
+                    { label: 'Apple App Store', url: 'https://apps.apple.com/us/search?term=Speed%20Gods', icon: 'fa-brands fa-app-store-ios', store: 'apple' }
+                ]
+            },
+            {
+                name: 'Gang Wars: Battle Royale',
+                category: 'multiplayer',
+                badge: 'Play Store • Photon/PlayFab',
+                badgeColor: 'amber',
+                desc: 'Single-player and multiplayer game using Photon networking, PlayFab dedicated-server hosting, and sockets for private matches.',
+                links: [
+                    { label: 'Google Play Store', url: 'https://play.google.com/store/search?q=Gang%20Wars%20Battle%20Royale&c=apps', icon: 'fa-brands fa-google-play', store: 'play' }
+                ]
+            },
+            {
+                name: 'Panzer Fury',
+                category: 'multiplayer',
+                badge: 'Play Store | App Store',
+                badgeColor: 'emerald',
+                desc: 'Single-player and multiplayer tank combat game powered by Photon networking.',
+                links: [
+                    { label: 'Google Play Store', url: 'https://play.google.com/store/search?q=Panzer%20Fury&c=apps', icon: 'fa-brands fa-google-play', store: 'play' },
+                    { label: 'Apple App Store', url: 'https://apps.apple.com/us/search?term=Panzer%20Fury', icon: 'fa-brands fa-app-store-ios', store: 'apple' }
+                ]
+            },
             { name: 'Block Wars', category: 'multiplayer', badge: 'Strategy', badgeColor: 'cyan', desc: 'Clash of Clans-style base building and tactical troop battle game.' },
             { name: 'FPS', category: 'multiplayer', badge: '3D Action', badgeColor: 'rose', desc: 'First-person shooter game featuring tactical combat and weapon mechanics.' },
             { name: 'Prime Target', category: 'multiplayer', badge: '2D Shooter', badgeColor: 'rose', desc: 'Action-packed 2D shooting game with precision aiming challenges.' }
@@ -1004,6 +1157,25 @@
                     project.placeholderColor.bg,
                     project.placeholderColor.text
                 );
+
+                const mediaIconsHtml = (project.links || []).map(link => {
+                    let badgeStyle = 'bg-slate-800/90 text-slate-300 border-slate-700 hover:border-cyan-400 hover:text-cyan-300';
+                    if (link.url.includes('youtube.com') || link.url.includes('youtu.be')) {
+                        badgeStyle = 'bg-rose-600/20 text-rose-400 border-rose-500/40 hover:bg-rose-600/35';
+                    } else if (link.url.includes('play.unity.com')) {
+                        badgeStyle = 'bg-cyan-500/15 text-cyan-300 border-cyan-500/40 hover:bg-cyan-500/30';
+                    } else if (link.url.includes('play.google.com')) {
+                        badgeStyle = 'bg-emerald-500/15 text-emerald-300 border-emerald-500/40 hover:bg-emerald-500/30';
+                    } else if (link.url.includes('steampowered.com')) {
+                        badgeStyle = 'bg-blue-500/15 text-blue-300 border-blue-500/40 hover:bg-blue-500/30';
+                    } else if (link.url.includes('drive.google.com')) {
+                        badgeStyle = 'bg-amber-500/15 text-amber-300 border-amber-500/40 hover:bg-amber-500/30';
+                    }
+
+                    return `<a href="${link.url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();" title="${link.label}" aria-label="${link.label}" class="w-8 h-8 rounded-lg border flex items-center justify-center text-xs transition-all ${badgeStyle}">
+                                <i class="${link.icon}"></i>
+                            </a>`;
+                }).join('');
 
                 const platformPills = project.platforms.map(pl => 
                     `<span class="px-2 py-0.5 rounded bg-slate-800/90 text-slate-300 text-[11px] font-mono border border-slate-700">${pl}</span>`
@@ -1056,11 +1228,11 @@
                         <div class="flex flex-wrap gap-1.5">
                             ${techPills}
                         </div>
-                        <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between">
-                            <span class="text-xs font-mono text-slate-400">
-                                ${project.links.length} Media / Demo Link${project.links.length > 1 ? 's' : ''}
-                            </span>
-                            <button class="text-xs sm:text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 flex items-center gap-1.5">
+                        <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between gap-2">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                ${mediaIconsHtml}
+                            </div>
+                            <button class="text-xs sm:text-sm font-semibold text-cyan-400 group-hover:text-cyan-300 flex items-center gap-1.5 shrink-0">
                                 <span>Inspect Gallery (${project.screenshots.length})</span>
                                 <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
                             </button>
@@ -1358,6 +1530,15 @@
             catalogEmpty.classList.add('hidden');
 
             filtered.forEach(item => {
+                const storeIconsHtml = (item.links || []).map(link => {
+                    const iconStyle = link.store === 'apple'
+                        ? 'bg-sky-500/15 text-sky-300 border-sky-500/40 hover:bg-sky-500/30'
+                        : 'bg-emerald-500/15 text-emerald-300 border-emerald-500/40 hover:bg-emerald-500/30';
+                    return `<a href="${link.url}" target="_blank" rel="noopener noreferrer" title="${link.label}" aria-label="${link.label}" class="w-7 h-7 rounded-lg border flex items-center justify-center text-xs transition-all ${iconStyle}">
+                                <i class="${link.icon}"></i>
+                            </a>`;
+                }).join('');
+
                 const el = document.createElement('div');
                 el.className = 'glass-card rounded-xl p-5 flex flex-col justify-between transition-all hover:-translate-y-0.5';
                 el.innerHTML = `
@@ -1374,11 +1555,14 @@
                             ${item.desc}
                         </p>
                     </div>
-                    <div class="pt-3 border-t border-slate-800/70 flex items-center justify-between">
+                    <div class="pt-3 border-t border-slate-800/70 flex items-center justify-between gap-2">
                         <span class="px-2.5 py-0.5 rounded-md text-[11px] font-mono border ${getBadgeClasses(item.badgeColor)}">
                             ${item.badge}
                         </span>
-                        <span class="text-[11px] font-mono text-slate-500 uppercase">${item.category}</span>
+                        <div class="flex items-center gap-1.5">
+                            ${storeIconsHtml}
+                            <span class="text-[11px] font-mono text-slate-500 uppercase">${item.category}</span>
+                        </div>
                     </div>
                 `;
                 catalogGrid.appendChild(el);
